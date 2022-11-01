@@ -1,9 +1,11 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Home from './components/home';
-
-
-
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
+import Home from "./components/home";
 
 function App() {
   return (
@@ -11,11 +13,11 @@ function App() {
       <div className="App">
         <Switch>
           <Route exact path="/" component={Home} />
+          <Redirect to="/" />
         </Switch>
       </div>
     </Router>
-
   );
 }
 
-export default App; 
+export default App;

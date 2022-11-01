@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import ReactDOM from "react-dom/client";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Col from "react-bootstrap/esm/Col";
-// import Button from '@restart/ui/esm/Button';
 import Row from "react-bootstrap/esm/Row";
 import Form from "react-bootstrap/Form";
 import Card from "react-bootstrap/Card";
@@ -46,11 +44,11 @@ function Home() {
           <Container>
             <Navbar.Brand href="#home">
               <img
-                alt=""
                 src={logo}
                 width="45"
                 height="45"
                 className="d-inline-block align-top"
+                alt="img"
               />{" "}
               <span
                 style={{
@@ -88,7 +86,8 @@ function Home() {
                   <img
                     src={loan}
                     style={{ margin: "25px", width: "75%", height: "75%" }}
-                  ></img>
+                    alt="img"
+                  />
                 </div>
                 <div style={{ marginTop: "15px" }}>
                   <Card>
